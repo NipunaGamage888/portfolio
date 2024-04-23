@@ -1,0 +1,59 @@
+.home{
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+  
+
+    &__image-sec{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+        position: relative;
+        padding: 0 50px;
+    }
+    &__image-back{
+        background-color: #ffb400;
+       width: 200rem;
+       height: 250%;
+       position: absolute;
+        transform: rotate(-15deg);
+        z-index: -2;
+        left: -160em;
+        top:.5em;
+    }
+    &__image{
+        height:calc(100vh - 100px);
+        width: 50rem;
+        border-radius: 50px;
+
+    
+    }
+    &__name{
+        display: flex;
+        flex-direction: column;
+        font-size: 3em;
+        color: #ffb400;
+    }
+    &__title{
+        color: white;
+    }
+    &__details{
+     width: 60rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    }
+    &__info{
+        width:45rem;
+        font-size: 1.5rem;
+        line-height: 1.5em;
+        color: white;
+    }
+    &__button{
+        
+    }
+}
