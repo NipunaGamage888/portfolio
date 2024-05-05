@@ -158,11 +158,21 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 25rem;
+    padding-bottom: 2rem;
   }
   &__first-ed{
     background: white;
-    height: 4rem;
-    width: 8rem;
+    height: 10rem;
+    width: 30rem;
+    padding:0.5rem;
   }
+  &__education{
+    color: #ffb400;
+    font-size: 3rem;
+  }
+  &__institution{
+    font-size:1.5rem ;
+    color:#000;
 
+  }
 }
