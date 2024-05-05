@@ -220,17 +220,34 @@ function About() {
         <h2 className="about__education">Education</h2>
         <div className="about__first-ed">
           <h2 className="about__institution">Software Engineer Diploma - Branstation</h2>
-          <p>Completed my brainstation Bootcamp and obtained a Software Engineer  diploma. I was able to learn and developer
+          <p className="about__info-institute">Completed my brainstation Bootcamp and obtained a Software Engineer  diploma. I was able to learn and developer
+            skills such as React, Scss, Node, express and lot more. 
+          </p>
+        </div>
+        <div className="about__first-ed">
+          <h2 className="about__institution">Software Engineer Diploma - Branstation</h2>
+          <p className="about__info-institute">Completed my brainstation Bootcamp and obtained a Software Engineer  diploma. I was able to learn and developer
             skills such as React, Scss, Node, express and lot more. 
           </p>
         </div>
         </div>
         <div>
-          <h2>Experience</h2>
-          
+        <h2 className="about__education">Education</h2>
+        <div className="about__first-ed">
+          <h2 className="about__institution">Software Engineer Diploma - Branstation</h2>
+          <p className="about__info-institute">Completed my brainstation Bootcamp and obtained a Software Engineer  diploma. I was able to learn and developer
+            skills such as React, Scss, Node, express and lot more. 
+          </p>
         </div>
-        
-      </div>
+        <div className="about__first-ed">
+          <h2 className="about__institution">Software Engineer Diploma - Branstation</h2>
+          <p className="about__info-institute">Completed my brainstation Bootcamp and obtained a Software Engineer  diploma. I was able to learn and developer
+            skills such as React, Scss, Node, express and lot more. 
+          </p>
+        </div>
+        </div>
+        </div>
+      
     </motion.div>
   );
 }
