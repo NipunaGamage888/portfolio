@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { motion } from "framer-motion";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";    
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   const pageVariants = {
     initial: {
       opacity: 0,
@@ -32,6 +36,17 @@ function Contact() {
       },
     },
   };
+  const sendEmail=async()=>{
+    const formData={
+        name:name,
+        email:email,
+        subject:subject,
+        message:message
+    }
+    try{
+
+    }
+  }
   return (
     <motion.div
       initial="initial"
@@ -53,7 +68,7 @@ function Contact() {
           </p>
           <div className="contact__email">
             <FontAwesomeIcon
-            className="contact__icon"
+              className="contact__icon"
               icon={faEnvelope}
               style={{ color: "#ffb400" }}
             />
@@ -65,42 +80,68 @@ function Contact() {
             </div>
           </div>
           <div className="contact__email">
-          <FontAwesomeIcon
-            className="contact__icon"
+            <FontAwesomeIcon
+              className="contact__icon"
               icon={faPhone}
               style={{ color: "#ffb400" }}
             />
             <div>
               <h3 className="contact__email-heading">Contact Number</h3>
-              <p className="contact__email-address">
-                +1 647 894 5532
-              </p>
+              <p className="contact__email-address">+1 647 894 5532</p>
             </div>
           </div>
           <div className="contact__social-media">
             <a href="dasas">
-            <FontAwesomeIcon className="contact__linkedin" icon={faLinkedin}  style={{ color: "#ffb400" }}/>
+              <FontAwesomeIcon
+                className="contact__linkedin"
+                icon={faLinkedin}
+                style={{ color: "#ffb400" }}
+              />
             </a>
             <a>
-            <FontAwesomeIcon icon={faGithub} style={{ color: "#ffb400" }} className="contact__linkedin" />
+              <FontAwesomeIcon
+                icon={faGithub}
+                style={{ color: "#ffb400" }}
+                className="contact__linkedin"
+              />
             </a>
           </div>
         </div>
         <div className="contact__message">
           <form className="contact__form">
             <div className="contact__inputs">
-              <input className="contact__input" placeholder="Name"></input>
-              <input className="contact__input" placeholder="Name"></input>
-              <input className="contact__input" placeholder="Name"></input>
+              <input
+                value={name}
+                type="text"
+                onChange={(e) => setName(e.target.value)}
+                className="contact__input"
+                placeholder="Name"
+              ></input>
+              <input
+                value={email}
+                type="text"
+                onChange={(e)=>setEmail(e.target.value)}
+                className="contact__input"
+                placeholder="Email"
+              ></input>
+              <input
+                value={subject}
+                type="text"
+                onChange={(e)=>setSubject(e.target.value)}
+                className="contact__input"
+                placeholder="Subject"
+              ></input>
             </div>
             <div>
               <textarea
+                value={message}
+                onChange={(e)=>setMessage(e.target.value)}
                 placeholder="Write your Message here"
                 className="contact__textarea"
               ></textarea>
             </div>
           </form>
-          <button className="contact__button">Send Email</button>
+          <button onClick={sendEmail} className="contact__button">Send Email</button>
         </div>
       </div>
     </motion.div>
