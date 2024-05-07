@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./About.scss";
 import CV from '../../assets/NipunaGamageCV.pdf'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCloudArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function About() {
   const pageVariants = {
@@ -66,7 +68,9 @@ function About() {
             <a href={CV} download="Nipuna_Gamage_CV.pdf" class="about__download-btn">
               <p className="about__download-name">Download CV</p>
               
-              <span class="about__download-icon">&#x2B07;</span>
+              <span class="about__download-icon">
+                <FontAwesomeIcon icon={faCloudArrowDown } />
+                </span>
             </a>
           </div>
           <div className="about_second">
@@ -112,12 +116,12 @@ function About() {
           </div>
           <div className="about__exp">
             <h1 className="about__exp-heading">6+</h1>
-            <p className="about__exp-para">years of Experience</p>
+         
             <p className="about__exp-para">Hackathon Participations</p>
           </div>
           <div className="about__exp">
             <h1 className="about__exp-heading">4+</h1>
-            <p className="about__exp-para">years of Experience</p>
+           
             <p className="about__exp-para">Personal Projects</p>
           </div>
         </div>

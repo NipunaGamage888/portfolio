@@ -105,11 +105,7 @@
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    &::before {
-      content: "\2B07"; /* Unicode for download icon */
-      color: #000; /* Change icon color as needed */
-      font-size: 24px;
-    }
+    
   }
   &__skills{
     margin-top: 5rem;

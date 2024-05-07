@@ -3,7 +3,9 @@ import "./Contact.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { motion } from "framer-motion";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";    
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   const pageVariants = {
@@ -65,27 +67,27 @@ function Contact() {
           <div className="contact__email">
           <FontAwesomeIcon
             className="contact__icon"
-              icon={faEnvelope}
+              icon={faPhone}
               style={{ color: "#ffb400" }}
             />
             <div>
-              <h3 className="contact__email-heading">Email</h3>
+              <h3 className="contact__email-heading">Contact Number</h3>
               <p className="contact__email-address">
-                nipunagamage888@gmail.com
+                +1 647 894 5532
               </p>
             </div>
           </div>
-          <div>
-            <a>
-            <FontAwesomeIcon icon={faLinkedin}  style={{ color: "#ffb400" }}/>
+          <div className="contact__social-media">
+            <a href="dasas">
+            <FontAwesomeIcon className="contact__linkedin" icon={faLinkedin}  style={{ color: "#ffb400" }}/>
             </a>
             <a>
-
+            <FontAwesomeIcon icon={faGithub} style={{ color: "#ffb400" }} className="contact__linkedin" />
             </a>
           </div>
         </div>
         <div className="contact__message">
-          <form>
+          <form className="contact__form">
             <div className="contact__inputs">
               <input className="contact__input" placeholder="Name"></input>
               <input className="contact__input" placeholder="Name"></input>
@@ -98,6 +100,7 @@ function Contact() {
               ></textarea>
             </div>
           </form>
+          <button className="contact__button">Send Email</button>
         </div>
       </div>
     </motion.div>

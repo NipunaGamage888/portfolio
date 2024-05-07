@@ -38,14 +38,15 @@
   }
   &__inputs{
     padding-bottom: 2rem;
+    margin-left: 1rem;
   }
   &__input{
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
     font-weight: 600;
     border-radius: 10px;
-    padding: 1.5rem 3rem;
-    margin-left:2.5rem ;
+    padding: 1.5rem 0rem 1.5rem 2rem;
+    margin-left:1rem ;
     border: none;
     background-color:#252525 ;
     &::placeholder{
@@ -53,7 +54,7 @@
     }
   }
   &__textarea{
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
     font-weight: 600;
     margin-left: 2rem;
@@ -86,5 +87,25 @@
     margin: 0;
     font-size: 2rem;
     color: white;
+  }&__social-media{
+    margin-top: 1rem;
+  }&__linkedin{
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+  &__button{
+    margin-left: 2rem;
+    padding: 1.5rem 4rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #252525;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    &:hover{
+        background-color: #ffb400;
+    }
   }
 }
