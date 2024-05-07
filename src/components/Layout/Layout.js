@@ -5,6 +5,7 @@ import Home from '../Home/Home';
 import About from "../About/About";
 import Portfolio from '../Portfolio/Portfolio';
 import { useLocation } from "react-router-dom/dist";
+import Contact from "../Contact/Contact";
 
 
 function Layout() {
@@ -15,7 +16,8 @@ function Layout() {
       <Routes location={location} key = {location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/Contact" element={<Contact />} />
+        
         
       </Routes>
       </AnimatePresence>

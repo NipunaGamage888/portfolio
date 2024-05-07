@@ -12,13 +12,13 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="nav__li">
-          <Link to={"/portfolio"}>
+          <Link to={"/about"}>
             Home
           </Link>
         </li>
         <li className="nav__li">
-          <Link to={"/about"}>
-            Home
+          <Link to={"/Contact"}>
+            Contact
           </Link>
         </li>
 
