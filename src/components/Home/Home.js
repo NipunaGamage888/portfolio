@@ -32,7 +32,7 @@ function Home() {
     <motion.div className='home' initial="initial" animate="animate" exit="exit" variants={pageVariants} >
       <div className='home__image-sec'>
         <div className='home__image-back'></div>
-        <img alt='Image of my image' className='home__image' src={mainImage}/>
+        <img alt='personal ' className='home__image' src={mainImage}/>
        
         
       </div>
