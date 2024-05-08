@@ -96,20 +96,37 @@ function Contact() {
             </div>
           </div>
           <div className="contact__social-media">
-            <a href="https://www.linkedin.com/in/nipunamadhuwantha/">
+            <a
+              href="#"
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/nipunamadhuwantha/",
+                  "_blank"
+                )
+              }
+            >
               <FontAwesomeIcon
                 className="contact__linkedin"
                 icon={faLinkedin}
                 style={{ color: "#ffb400" }}
               />
             </a>
-            <a href="https://github.com/NipunaGamage888">
+            <a
+              href="#"
+              onClick={() =>
+                window.open(
+                  "https://github.com/NipunaGamage888",
+                  "_blank"
+                )
+              }
+            >
+           
               <FontAwesomeIcon
                 icon={faGithub}
                 style={{ color: "#ffb400" }}
                 className="contact__linkedin"
               />
-            </a>
+              </a>
           </div>
         </div>
         <div className="contact__message">
