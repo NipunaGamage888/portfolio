@@ -96,7 +96,7 @@ function Contact() {
             </div>
           </div>
           <div className="contact__social-media">
-            <a
+            <div
               onClick={() =>
                 window.open(
                   "https://www.linkedin.com/in/nipunamadhuwantha/",
@@ -109,8 +109,8 @@ function Contact() {
                 icon={faLinkedin}
                 style={{ color: "#ffb400" }}
               />
-            </a>
-            <a
+            </div>
+            <div
               onClick={() =>
                 window.open("https://github.com/NipunaGamage888", "_blank")
               }
@@ -120,7 +120,7 @@ function Contact() {
                 style={{ color: "#ffb400" }}
                 className="contact__linkedin"
               />
-              </a>
+              </div>
           </div>
         </div>
         <div className="contact__message">
