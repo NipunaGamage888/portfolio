@@ -96,14 +96,14 @@ function Contact() {
             </div>
           </div>
           <div className="contact__social-media">
-            <a href="dasas">
+            <a href="https://www.linkedin.com/in/nipunamadhuwantha/">
               <FontAwesomeIcon
                 className="contact__linkedin"
                 icon={faLinkedin}
                 style={{ color: "#ffb400" }}
               />
             </a>
-            <a>
+            <a href="https://github.com/NipunaGamage888">
               <FontAwesomeIcon
                 icon={faGithub}
                 style={{ color: "#ffb400" }}
