@@ -97,7 +97,6 @@ function Contact() {
           </div>
           <div className="contact__social-media">
             <a
-             
               onClick={() =>
                 window.open(
                   "https://www.linkedin.com/in/nipunamadhuwantha/",
@@ -112,7 +111,6 @@ function Contact() {
               />
             </a>
             <a
-             
               onClick={() =>
                 window.open("https://github.com/NipunaGamage888", "_blank")
               }
