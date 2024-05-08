@@ -114,13 +114,9 @@ function Contact() {
             <a
               href="#"
               onClick={() =>
-                window.open(
-                  "https://github.com/NipunaGamage888",
-                  "_blank"
-                )
+                window.open("https://github.com/NipunaGamage888", "_blank")
               }
             >
-           
               <FontAwesomeIcon
                 icon={faGithub}
                 style={{ color: "#ffb400" }}
