@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import axios from "axios";
 
 function Contact() {
   const [email, setEmail] = useState("");
@@ -36,17 +37,21 @@ function Contact() {
       },
     },
   };
-  const sendEmail=async()=>{
-    const formData={
-        name:name,
-        email:email,
-        subject:subject,
-        message:message
+  const sendEmail = async () => {
+    const formData = {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
+    };
+    try {
+      await axios.post("http://localhost:8081/api/sendemail", formData);
+      alert("Email Sent Successfully");
+    } catch (error) {
+      console.error(error);
     }
-    try{
+  };
 
-    }
-  }
   return (
     <motion.div
       initial="initial"
@@ -111,37 +116,39 @@ function Contact() {
           <form className="contact__form">
             <div className="contact__inputs">
               <input
+                className="contact__input"
+                placeholder="Name"
                 value={name}
                 type="text"
                 onChange={(e) => setName(e.target.value)}
-                className="contact__input"
-                placeholder="Name"
               ></input>
               <input
-                value={email}
-                type="text"
-                onChange={(e)=>setEmail(e.target.value)}
                 className="contact__input"
                 placeholder="Email"
+                value={email}
+                type="text"
+                onChange={(e) => setEmail(e.target.value)}
               ></input>
               <input
-                value={subject}
-                type="text"
-                onChange={(e)=>setSubject(e.target.value)}
                 className="contact__input"
                 placeholder="Subject"
+                value={subject}
+                type="text"
+                onChange={(e) => setSubject(e.target.value)}
               ></input>
             </div>
             <div>
               <textarea
                 value={message}
-                onChange={(e)=>setMessage(e.target.value)}
+                onChange={(e) => setMessage(e.target.value)}
                 placeholder="Write your Message here"
                 className="contact__textarea"
               ></textarea>
             </div>
           </form>
-          <button onClick={sendEmail} className="contact__button">Send Email</button>
+          <button onClick={sendEmail} className="contact__button">
+            Send Email
+          </button>
         </div>
       </div>
     </motion.div>

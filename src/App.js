@@ -8,9 +8,14 @@ import Layout from "./components/Layout/Layout";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter className='app'>
+      <div className='app__nav'>
       <Navbar />
-      <Layout />
+      </div>
+      
+      <div className="app__layout">
+        <Layout />
+      </div>
     </BrowserRouter>
   );
 }
