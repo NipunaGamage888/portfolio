@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./About.scss";
-import CV from '../../assets/NipunaGamageCV.pdf'
+import CV from "../../assets/NipunaGamageCV.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloudArrowDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -65,12 +65,16 @@ function About() {
             <p className="about__desc">
               Freelance: <span className="about__desc-info">Available</span>
             </p>
-            <a href={CV} download="Nipuna_Gamage_CV.pdf" class="about__download-btn">
+            <a
+              href={CV}
+              download="Nipuna_Gamage_CV.pdf"
+              class="about__download-btn"
+            >
               <p className="about__download-name">Download CV</p>
-              
+
               <span class="about__download-icon">
-                <FontAwesomeIcon icon={faCloudArrowDown } />
-                </span>
+                <FontAwesomeIcon icon={faCloudArrowDown} />
+              </span>
             </a>
           </div>
           <div className="about_second">
@@ -116,142 +120,139 @@ function About() {
           </div>
           <div className="about__exp">
             <h1 className="about__exp-heading">6+</h1>
-         
+
             <p className="about__exp-para">Hackathon Participations</p>
           </div>
           <div className="about__exp">
             <h1 className="about__exp-heading">4+</h1>
-           
+
             <p className="about__exp-para">Personal Projects</p>
           </div>
         </div>
       </div>
       <div className="about__skills">
-          <div className="about__chart">
-            <div className="about__progress">
-                <p className="about__percentage">
-                  20%
-                </p>
-                
-            </div>  
-            <p className="about__language">Html</p>
+        <div className="about__chart">
+          <div className="about__progress">
+            <p className="about__percentage">95%</p>
           </div>
-          <div className="about__chart">
-            <div className="about__progress">
-                <p className="about__percentage">
-                  20%
-                </p>
-                
-            </div>  
-            <p className="about__language">Html</p>
+          <p className="about__language">Html</p>
+        </div>
+        <div className="about__chart">
+          <div className="about__progress2">
+            <p className="about__percentage">80%</p>
           </div>
-          <div className="about__chart">
-            <div className="about__progress">
-                <p className="about__percentage">
-                  20%
-                </p>
-                
-            </div>  
-            <p className="about__language">Html</p>
+          <p className="about__language">Scss</p>
+        </div>
+        <div className="about__chart">
+          <div className="about__progress3">
+            <p className="about__percentage">75%</p>
           </div>
-          <div className="about__chart">
-            <div className="about__progress">
-                <p className="about__percentage">
-                  20%
-                </p>
-                
-            </div>  
-            <p className="about__language">Html</p>
+          <p className="about__language">javaScript</p>
+        </div>
+        <div className="about__chart">
+          <div className="about__progress4">
+            <p className="about__percentage">60%</p>
           </div>
-          <div className="about__chart">
-            <div className="about__progress">
-                <p className="about__percentage">
-                  20%
-                </p>
-                
-            </div>  
-            <p className="about__language">Html</p>
+          <p className="about__language">Node</p>
+        </div>
+        <div className="about__chart">
+          <div className="about__progress5">
+            <p className="about__percentage">60%</p>
           </div>
-          <div className="about__chart">
-            <div className="about__progress">
-                <p className="about__percentage">
-                  20%
-                </p>
-                
-            </div>  
-            <p className="about__language">Html</p>
+          <p className="about__language">Express</p>
+        </div>
+        <div className="about__chart">
+          <div className="about__progress6">
+            <p className="about__percentage">70%</p>
           </div>
-          <div className="about__chart">
-            <div className="about__progress">
-                <p className="about__percentage">
-                  20%
-                </p>
-                
-            </div>  
-            <p className="about__language">Html</p>
+          <p className="about__language">MySql</p>
+        </div>
+        <div className="about__chart">
+          <div className="about__progress7">
+            <p className="about__percentage">45%</p>
           </div>
-          <div className="about__chart">
-            <div className="about__progress">
-                <p className="about__percentage">
-                  20%
-                </p>
-                
-            </div>  
-            <p className="about__language">Html</p>
+          <p className="about__language">Python</p>
+        </div>
+        <div className="about__chart">
+          <div className="about__progress">
+            <p className="about__percentage">78%</p>
           </div>
-          <div className="about__chart">
-            <div className="about__progress">
-                <p className="about__percentage">
-                  20%
-                </p>
-                
-            </div>  
-            <p className="about__language">Html</p>
+          <p className="about__language">React</p>
+        </div>
+        <div className="about__chart">
+          <div className="about__progress">
+            <p className="about__percentage">70%</p>
           </div>
-          <div className="about__chart">
-            <div className="about__progress">
-                <p className="about__percentage">
-                  20%
-                </p>
-                
-            </div>  
-            <p className="about__language">Html</p>
+          <p className="about__language">Heroku & Netlify</p>
+        </div>
+        <div className="about__chart">
+          <div className="about__progress">
+            <p className="about__percentage">60%</p>
           </div>
-         
+          <p className="about__language">MongoDb</p>
+        </div>
+        <div className="about__chart">
+          <div className="about__progress">
+            <p className="about__percentage">80%</p>
+          </div>
+          <p className="about__language">Github</p>
+        </div>
+        <div className="about__chart">
+          <div className="about__progress">
+            <p className="about__percentage">70%</p>
+          </div>
+          <p className="about__language">Web Apis</p>
+        </div>
+        
       </div>
       <div className="about__final">
         <div>
-        <h2 className="about__education">Education</h2>
-        <div className="about__first-ed">
-          <h2 className="about__institution">Software Engineer Diploma - Branstation</h2>
-          <p className="about__info-institute">Completed my brainstation Bootcamp and obtained a Software Engineer  diploma. I was able to learn and developer
-            skills such as React, Scss, Node, express and lot more. 
-          </p>
-        </div>
-        <div className="about__first-ed">
-          <h2 className="about__institution">Software Engineer Diploma - Branstation</h2>
-          <p className="about__info-institute">Completed my brainstation Bootcamp and obtained a Software Engineer  diploma. I was able to learn and developer
-            skills such as React, Scss, Node, express and lot more. 
-          </p>
-        </div>
+          <h2 className="about__education">Education</h2>
+          <div className="about__first-ed">
+            <h2 className="about__institution">
+              Software Engineer Diploma - Branstation
+            </h2>
+            <p className="about__info-institute">
+              Completed my brainstation Bootcamp and obtained a Software
+              Engineer diploma. I was able to learn and developer skills such as
+              React, Scss, Node, express and lot more.
+            </p>
+          </div>
+          <div className="about__first-ed">
+            <h2 className="about__institution">
+              Software Engineer Diploma - Branstation
+            </h2>
+            <p className="about__info-institute">
+              Completed my brainstation Bootcamp and obtained a Software
+              Engineer diploma. I was able to learn and developer skills such as
+              React, Scss, Node, express and lot more.
+            </p>
+          </div>
         </div>
         <div>
-        <h2 className="about__education">Education</h2>
-        <div className="about__first-ed">
-          <h2 className="about__institution">Software Engineer Diploma - Branstation</h2>
-          <p className="about__info-institute">Completed my brainstation Bootcamp and obtained a Software Engineer  diploma. I was able to learn and developer
-            skills such as React, Scss, Node, express and lot more. 
-          </p>
+          <h2 className="about__education">Education</h2>
+          <div className="about__first-ed">
+            <h2 className="about__institution">
+              Software Engineer Diploma - Branstation
+            </h2>
+            <p className="about__info-institute">
+              Completed my brainstation Bootcamp and obtained a Software
+              Engineer diploma. I was able to learn and developer skills such as
+              React, Scss, Node, express and lot more.
+            </p>
+          </div>
+          <div className="about__first-ed">
+            <h2 className="about__institution">
+              Software Engineer Diploma - Branstation
+            </h2>
+            <p className="about__info-institute">
+              Completed my brainstation Bootcamp and obtained a Software
+              Engineer diploma. I was able to learn and developer skills such as
+              React, Scss, Node, express and lot more.
+            </p>
+          </div>
         </div>
-        <div className="about__first-ed">
-          <h2 className="about__institution">Software Engineer Diploma - Branstation</h2>
-          <p className="about__info-institute">Completed my brainstation Bootcamp and obtained a Software Engineer  diploma. I was able to learn and developer
-            skills such as React, Scss, Node, express and lot more. 
-          </p>
-        </div>
-        </div>
-        </div>
-      
+      </div>
     </motion.div>
   );
 }
