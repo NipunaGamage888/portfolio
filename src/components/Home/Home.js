@@ -1,10 +1,35 @@
 import React from 'react'
 import './Home.scss'
-import mainImage from '../../assets/Online-NA-Headshots_January-2024_0018_Nipuna-Gamage--Software-Engineering-Jan-NA-Online-2024.jpg'
+import mainImage from '../../assets/Face.jpg'
+import {motion } from 'framer-motion'
 
 function Home() {
+  const pageVariants = {
+    initial: {
+      opacity: 0,
+      x: '-100vw',
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: 'spring',
+        stiffness: 120,
+        damping: 20,
+        duration:2
+      },
+    },
+    exit: {
+      opacity: 0,
+      x: '100vw',
+      transition: {
+        ease: 'easeInOut',
+        duration:2
+      },
+    },
+  };
   return (
-    <div className='home'>
+    <motion.div className='home' initial="initial" animate="animate" exit="exit" variants={pageVariants} >
       <div className='home__image-sec'>
         <div className='home__image-back'></div>
         <img className='home__image' src={mainImage}/>
@@ -23,7 +48,7 @@ function Home() {
       <button className='home__button'>About Me</button>
         </div>
         
-    </div>
+    </motion.div>
   )
 }
 

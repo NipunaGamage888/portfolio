@@ -1,0 +1,111 @@
+.contact{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+   &__heading {
+    font-size: 7rem;
+    color: white;
+  }
+   &__me {
+    color: #ffb400;
+  }
+  &__methods{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    
+
+  }&__info{
+    width: 40%;
+  }&__friends{
+    color: #ffb400;
+    font-size: 2rem;
+  }&__summary{
+    color: white;
+    font-size: 1rem;
+    font-size: 1.6rem;
+
+  }
+  &__message{
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__inputs{
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+  }
+  &__input{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 1.5rem 0rem 1.5rem 2rem;
+    margin-left:1rem ;
+    border: none;
+    background-color:#252525 ;
+    &::placeholder{
+        color:white;
+    }
+  }
+  &__textarea{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    margin-left: 2rem;
+    padding: 2rem;
+    width: 83%;
+    border: none;
+    background-color:#252525 ;
+    border-radius: 10px;
+    height: 20rem;
+    &::placeholder{
+        color:white;
+    }
+  
+  }&__email{
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+  }&__icon{
+    height: 4rem;
+    margin-right: 1rem;
+  }
+  &__email-heading{
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+  }
+  &__email-address{
+    font-weight: 600;
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+  }&__social-media{
+    margin-top: 1rem;
+  }&__linkedin{
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+  &__button{
+    margin-left: 2rem;
+    padding: 1.5rem 4rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #252525;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    &:hover{
+        background-color: #ffb400;
+    }
+  }
+}

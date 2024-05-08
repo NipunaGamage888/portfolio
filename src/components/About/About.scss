@@ -1,0 +1,181 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  &__heading {
+    font-size: 7rem;
+    color: white;
+  }
+  &__heading-sec {
+    font-size: 4rem;
+    color: white;
+  }
+  &__pers {
+    color: #ffb400;
+  }
+  &__info {
+    display: flex;
+    border-bottom: 1px solid rgb(109, 106, 106) ;
+  }
+  &__me {
+    color: #ffb400;
+  }
+  &__details {
+    display: flex;
+    margin-right: 5rem;
+  }
+  &__desc {
+    font-size: 2rem;
+    color: rgb(183, 181, 181);
+  }
+  &__desc-info {
+    color: white;
+  }
+  &__first {
+    margin-right: 6rem;
+  }
+  &__years {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding-bottom: 15rem;
+  }
+  &__exp {
+    border: 1px solid rgb(109, 106, 106);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+  }
+  &__exp-heading {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #ffb400;
+    margin: 0;
+    padding: 0;
+  }
+  &__exp-para {
+    color: white;
+    font-size: 1.5rem;
+  }
+  &__download-btn {
+    display: inline-block;
+    border:1px solid rgb(109, 106, 106) ;
+    color: #fff;
+    width: 22rem;
+    height: 6rem;
+    
+    vertical-align:middle;
+    //padding: 2 20px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    &:hover {
+      background-color: #ffb400;
+    }
+  }
+  &__download-name{
+   vertical-align: middle;
+    font-size:2rem ;
+    margin-left: -4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__download-icon {
+    position: absolute;
+    top: 50%;
+    right: -0.2rem;
+    transform: translateY(-50%);
+    width: 6.5rem;
+    height: 6rem;
+    background-color: #ffb400; /* Change color as needed */
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    
+  }
+  &__skills{
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+    display: grid;
+    border-bottom:1px solid rgb(109, 106, 106) ;
+    grid-template-columns: repeat(5, 1fr);
+   // grid-template-rows: repeat(3, 1fr);
+    gap: 5rem;
+  }
+  &__chart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__progress{
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(#ffb400 3.6deg, white 0deg);
+
+    &::before{
+        content: "";
+        position: absolute;
+        background-color: rgb(30, 30, 30);;
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+
+    }
+  }
+  &__percentage{
+    color: #ffb400;
+    position: relative;
+  }
+  &__language{
+    color: #ffb400;
+    font-size: 2rem;
+    margin: 0;
+  }
+  &__final{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25rem;
+    padding-bottom: 2rem;
+  }
+  &__first-ed{
+    background: white;
+    margin-bottom: 2rem;
+    width: 30rem;
+    padding:0.5rem;
+    border-radius: 5px;
+    border-left: black 1px solid;
+  }
+  &__education{
+    color: #ffb400;
+    font-size: 3rem;
+  }
+  &__institution{
+    font-size:1.5rem ;
+    color:#000;
+    font-weight: 700;
+
+  }
+  &__info-institute{
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+}
