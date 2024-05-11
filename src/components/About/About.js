@@ -82,27 +82,40 @@ function About() {
               Phone: <span className="about__desc-info">+16478945532</span>
             </p>
             <p className="about__desc">
-              Email:
+              Email: 
               <span className="about__desc-info">
                 nipunagamage888@gmail.com
               </span>
             </p>
             <p className="about__desc">
-              Address:
+             Languages: 
               <span className="about__desc-info">
-                725 greenoch Court Oshawa
+                English and Sinhala
               </span>
             </p>
             <p className="about__desc">
-              Linkedin{" "}
+              Linkedin: 
               <span className="about__desc-info">
-                dafasdadfadfdafadfdafadfda
+                <a onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/nipunamadhuwantha/",
+                  "_blank"
+                )
+              }>
+                
+                </a>
+             
               </span>
             </p>
             <p className="about__desc">
-              Address:
+              Github: 
               <span className="about__desc-info">
-                725 greenoch Court Oshawa
+                <a onClick={() =>
+                window.open("https://github.com/NipunaGamage888", "_blank")
+              }>
+                
+                </a>
+              
               </span>
             </p>
           </div>
