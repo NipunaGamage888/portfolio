@@ -3,6 +3,7 @@ import "./Home.scss";
 import mainImage from "../../assets/Face.jpg";
 import { motion } from "framer-motion";
 import { Typed } from "react-typed";
+import Main from "../Main/Main";
 
 function Home() {
   const pageVariants = {
@@ -65,6 +66,7 @@ function Home() {
       exit="exit"
       variants={pageVariants}
     >
+      <Main id='main'/>
       <div className="home__image-sec">
         {/* <div className='home__image-back'></div>*/}
         <img alt="personal " className="home__image" src={mainImage} />

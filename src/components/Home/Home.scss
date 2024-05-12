@@ -1,3 +1,9 @@
+.main canvas{
+  z-index: -10;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
 .home {
   overflow: hidden;
   display: flex;
@@ -8,7 +14,7 @@
   justify-content: center;
 
   &__image-sec {
-  
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,6 +23,7 @@
     padding: 0 50px;
   }
   &__image-back {
+    z-index: 1;
     background-color: #ffb400;
     width: 200rem;
     height: 250%;
@@ -27,11 +34,13 @@
     top: 0.5em;
   }
   &__image {
+    z-index: 1;
     height:25rem;
     width: 25rem;
     border-radius: 50%;
   }
   &__name {
+    z-index: 1;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -39,31 +48,35 @@
     color: #ffb400;
   }
   &__title {
+    z-index: 1;
     text-align: center;
     color: white;
     display: flex;
     margin: 0;
     font-size: 3rem;
   }&__main-detail{
+    z-index: 1;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   &__details {
+    z-index: 1;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   &__info {
+    z-index: 1;
     width: 45rem;
     font-size: 1.5rem;
     line-height: 1.5em;
     color: white;
   }
   &__button {
-    
+    z-index: 1;
     border: 0;
     font-size: 1rem;
     font-weight: 600;
