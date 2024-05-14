@@ -73,9 +73,9 @@ function Home() {
       </div>
       <div className="home__main-detail">
         <div className="home__details">
-          <h1 className="home__name"></h1>
+          <div className="home__name"> </div>
 
-          <h2 className="home__title"></h2>
+          <div className="home__title"> </div>
 
           <p className="home__info">
             I'm a Tunisian based web designer & front‑end developer focused on
