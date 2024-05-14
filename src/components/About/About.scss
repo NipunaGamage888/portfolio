@@ -29,7 +29,7 @@
   &__info {
     display: flex;
     flex-direction: column;
-    @include desktop {
+    @include tablet {
       display: flex;
       flex-direction: row;
       border-bottom: 1px solid rgb(109, 106, 106);
@@ -65,7 +65,8 @@
     margin-bottom: 2rem;
     border-bottom: 1px solid rgb(109, 106, 106);
     padding-bottom: 2rem;
-    @include desktop {
+    @include tablet {
+      justify-content: flex-start;
       padding-bottom: 2rem;
       margin-bottom: 0rem;
       border-bottom: none;
@@ -145,6 +146,11 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    @include tablet{
+      align-self: flex-start;
+      width: 15rem;
+      height: 4.5rem;
+    }
     @include desktop {
       width: 22rem;
       height: 6rem;
@@ -181,6 +187,10 @@
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    @include tablet{
+      height: 4.5rem;
+      width: 4.5rem;
+    }
     @include desktop {
       right: -0.2rem;
       width: 6.5rem;
@@ -190,6 +200,15 @@
   &__skills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @include tablet{
+      margin-top: 5rem;
+      padding-bottom: 5rem;
+      display: grid;
+      border-bottom: 1px solid rgb(109, 106, 106);
+      grid-template-columns: repeat(4, 1fr);
+      // grid-template-rows: repeat(3, 1fr);
+      gap: 2rem;
+    }
     @include desktop {
       margin-top: 5rem;
       padding-bottom: 5rem;
@@ -206,7 +225,7 @@
     flex-direction: column;
     align-items: center;
     @include desktop {
-     margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
   &__progress {
@@ -356,27 +375,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @include desktop{
+    @include desktop {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 25rem;
       padding-bottom: 2rem;
     }
-   
   }
-  &__edu-sec{
+  &__edu-sec {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   &__first-ed {
-    background: white;
+    background: #252525;
     margin-bottom: 2rem;
-    width: 30rem;
     padding: 0.5rem;
     border-radius: 5px;
-    border-left: black 1px solid;
+    border-left: black 3px solid;
+    width: 85%;
+    @include desktop {
+      background: #252525;
+      margin-bottom: 2rem;
+      width: 30rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border-left: black 1px solid;
+    }
   }
   &__education {
     color: #ffb400;
@@ -384,10 +410,11 @@
   }
   &__institution {
     font-size: 1.5rem;
-    color: #000;
+    color: #ffb400;
     font-weight: 700;
   }
   &__info-institute {
+    color: #ffb400;
     font-size: 1.2rem;
     text-align: justify;
   }

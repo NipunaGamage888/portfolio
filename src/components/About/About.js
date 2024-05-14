@@ -196,7 +196,7 @@ function About() {
           <div className="about__progress">
             <p className="about__percentage">70%</p>
           </div>
-          <p className="about__language">Heroku & Netlify</p>
+          <p className="about__language">CI/CD</p>
         </div>
         <div className="about__chart">
           <div className="about__progress">
