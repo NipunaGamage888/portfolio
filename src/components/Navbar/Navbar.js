@@ -1,19 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.scss";
 import { useNavigate } from "react-router-dom/dist";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const navigate=useNavigate()
+  const [open, setOpen]=useState(false)
+
+  const toggleNavBar= ()=>{
+    setOpen(true)
+  }
+  const toggleOff =()=>{
+    setOpen(false)
+  }
   return (
     <nav className="nav">
-      <div className="nav__mobile">
-        <FontAwesomeIcon
+      <FontAwesomeIcon
+          onClick={toggleNavBar}
           className="nav__icon"
           icon={faBars}
           style={{ color: "#ffb400" }}
         />
+      <div className={`nav__mobile ${open ? 'nav__mobile-open':''}`}>
+      <FontAwesomeIcon icon={faXmark}
+      className="nav__icon"
+      style={{ color: "#ffb400" }}
+      onClick={toggleOff}
+      />
+        
         <ul className="nav__list-mobile">
         <li onClick={()=>navigate('/')} className="nav__li-mobile">
             Home 

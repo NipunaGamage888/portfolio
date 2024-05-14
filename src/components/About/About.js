@@ -45,6 +45,7 @@ function About() {
         Personal <span1 className="about__pers">Info</span1>
       </h2>
       <div className="about__info">
+      <div className="about__both">
         <div className="about__details">
           <div className="about__first">
             <p className="about__desc">
@@ -59,23 +60,13 @@ function About() {
             <p className="about__desc">
               Address:
               <span className="about__desc-info">
-                725 greenoch Court Oshawa
+               Oshawa, Ontario
               </span>
             </p>
             <p className="about__desc">
               Freelance: <span className="about__desc-info">Available</span>
             </p>
-            <a
-              href={CV}
-              download="Nipuna_Gamage_CV.pdf"
-              class="about__download-btn"
-            >
-              <p className="about__download-name">Download CV</p>
-
-              <span class="about__download-icon">
-                <FontAwesomeIcon icon={faCloudArrowDown} />
-              </span>
-            </a>
+            
           </div>
           <div className="about_second">
             <p className="about__desc">
@@ -95,31 +86,43 @@ function About() {
             </p>
             <p className="about__desc">
               Linkedin: 
-              <span className="about__desc-info">
-                <a onClick={() =>
+              <span className="about__desc-info about__desc-info-link"
+                 onClick={() =>
                 window.open(
                   "https://www.linkedin.com/in/nipunamadhuwantha/",
                   "_blank"
                 )
-              }>
+              }>nipunamadhuwantha
                 
-                </a>
+                
              
               </span>
             </p>
             <p className="about__desc">
               Github: 
               <span className="about__desc-info">
-                <a onClick={() =>
+                <a className="about__desc-info-link" onClick={() =>
                 window.open("https://github.com/NipunaGamage888", "_blank")
               }>
-                
+                NipunaGamage888
                 </a>
               
               </span>
             </p>
           </div>
         </div>
+        <a
+              href={CV}
+              download="Nipuna_Gamage_CV.pdf"
+              class="about__download-btn"
+            >
+              <p className="about__download-name">Download CV</p>
+
+              <span class="about__download-icon">
+                <FontAwesomeIcon icon={faCloudArrowDown} />
+              </span>
+            </a>
+            </div>
         <div className="about__years">
           <div className="about__exp">
             <h1 className="about__exp-heading">2+</h1>
@@ -219,7 +222,7 @@ function About() {
         
       </div>
       <div className="about__final">
-        <div>
+        <div className="about__edu-sec">
           <h2 className="about__education">Education</h2>
           <div className="about__first-ed">
             <h2 className="about__institution">
@@ -242,7 +245,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div>
+        <div className="about__edu-sec">
           <h2 className="about__education">Education</h2>
           <div className="about__first-ed">
             <h2 className="about__institution">
