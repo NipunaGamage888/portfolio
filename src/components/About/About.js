@@ -100,13 +100,10 @@ function About() {
             </p>
             <p className="about__desc">
               Github: 
-              <span className="about__desc-info">
-                <a className="about__desc-info-link" onClick={() =>
-                window.open("https://github.com/NipunaGamage888", "_blank")
+              <span className="about__desc-info about__desc-info-link" 
+              onClick={() => window.open("https://github.com/NipunaGamage888", "_blank")
               }>
                 NipunaGamage888
-                </a>
-              
               </span>
             </p>
           </div>
