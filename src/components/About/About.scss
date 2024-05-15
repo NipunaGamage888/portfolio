@@ -361,6 +361,101 @@
       border-radius: 50%;
     }
   }
+  &__progress8 {
+    background: conic-gradient(#ffb400 300.6deg, white 0deg);
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: rgb(30, 30, 30);
+      width: 9rem;
+      height: 9rem;
+      border-radius: 50%;
+    }
+  }
+  &__progress9{
+    background: conic-gradient(#ffb400 260.6deg, white 0deg);
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: rgb(30, 30, 30);
+      width: 9rem;
+      height: 9rem;
+      border-radius: 50%;
+    }
+  }
+  &__progress10{
+    background: conic-gradient(#ffb400 230.6deg, white 0deg);
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: rgb(30, 30, 30);
+      width: 9rem;
+      height: 9rem;
+      border-radius: 50%;
+    }
+  }
+  &__progress11{
+    background: conic-gradient(#ffb400 310.6deg, white 0deg);
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: rgb(30, 30, 30);
+      width: 9rem;
+      height: 9rem;
+      border-radius: 50%;
+    }
+  }
+  &__progress12 {
+    background: conic-gradient(#ffb400 260.6deg, white 0deg);
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: rgb(30, 30, 30);
+      width: 9rem;
+      height: 9rem;
+      border-radius: 50%;
+    }
+  }
   &__percentage {
     color: #ffb400;
     position: relative;
@@ -379,6 +474,8 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 25rem;
+      justify-content: flex-start;
+      align-items: flex-start;
       padding-bottom: 2rem;
     }
   }

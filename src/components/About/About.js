@@ -185,31 +185,31 @@ function About() {
           <p className="about__language">Python</p>
         </div>
         <div className="about__chart">
-          <div className="about__progress">
+          <div className="about__progress8">
             <p className="about__percentage">78%</p>
           </div>
           <p className="about__language">React</p>
         </div>
         <div className="about__chart">
-          <div className="about__progress">
+          <div className="about__progress9">
             <p className="about__percentage">70%</p>
           </div>
           <p className="about__language">CI/CD</p>
         </div>
         <div className="about__chart">
-          <div className="about__progress">
+          <div className="about__progress10">
             <p className="about__percentage">60%</p>
           </div>
           <p className="about__language">MongoDb</p>
         </div>
         <div className="about__chart">
-          <div className="about__progress">
+          <div className="about__progress11">
             <p className="about__percentage">80%</p>
           </div>
           <p className="about__language">Github</p>
         </div>
         <div className="about__chart">
-          <div className="about__progress">
+          <div className="about__progress12">
             <p className="about__percentage">70%</p>
           </div>
           <p className="about__language">Web Apis</p>
@@ -263,10 +263,10 @@ function About() {
               the project Reppido. System that provides an overview of all
               incident reports within the municipality. The application consist
               of Incident. Responsible for creating and designing 20% user
-              interfaces.
-              Implemented secure payment gateways, fostering customer trust and boosting sales by 15% during
-incident report downloads. Designed and developed the application using Agile Scrum methodology by
-breaking down the project to several points.
+              interfaces. Implemented secure payment gateways, fostering
+              customer trust and boosting sales by 15% during incident report
+              downloads. Designed and developed the application using Agile
+              Scrum methodology by breaking down the project to several points.
             </p>
           </div>
         </div>
