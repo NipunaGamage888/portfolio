@@ -45,81 +45,79 @@ function About() {
         Personal <span1 className="about__pers">Info</span1>
       </h2>
       <div className="about__info">
-      <div className="about__both">
-        <div className="about__details">
-          <div className="about__first">
-            <p className="about__desc">
-              First Name:<span className="about__desc-info">Nipuna</span>
-            </p>
-            <p className="about__desc">
-              Last Name: <span className="about__desc-info">Gamage</span>
-            </p>
-            <p className="about__desc">
-              DOB: <span className="about__desc-info">1998/10/24</span>
-            </p>
-            <p className="about__desc">
-              Address:
-              <span className="about__desc-info">
-               Oshawa, Ontario
-              </span>
-            </p>
-            <p className="about__desc">
-              Freelance: <span className="about__desc-info">Available</span>
-            </p>
-            
-          </div>
-          <div className="about_second">
-            <p className="about__desc">
-              Phone: <span className="about__desc-info">+16478945532</span>
-            </p>
-            <p className="about__desc">
-              Email: 
-              <span className="about__desc-info">
-                nipunagamage888@gmail.com
-              </span>
-            </p>
-            <p className="about__desc">
-             Languages: 
-              <span className="about__desc-info">
-                English and Sinhala
-              </span>
-            </p>
-            <p className="about__desc">
-              Linkedin: 
-              <span className="about__desc-info about__desc-info-link"
-                 onClick={() =>
-                window.open(
-                  "https://www.linkedin.com/in/nipunamadhuwantha/",
-                  "_blank"
-                )
-              }>nipunamadhuwantha
-                
-                
-             
-              </span>
-            </p>
-            <p className="about__desc">
-              Github: 
-              <span className="about__desc-info about__desc-info-link" 
-              onClick={() => window.open("https://github.com/NipunaGamage888", "_blank")
-              }>
-                NipunaGamage888
-              </span>
-            </p>
-          </div>
-        </div>
-        <a
-              href={CV}
-              download="Nipuna_Gamage_CV.pdf"
-              class="about__download-btn"
-            >
-              <p className="about__download-name">Download CV</p>
-
-              <span class="about__download-icon">
-                <FontAwesomeIcon icon={faCloudArrowDown} />
-              </span>
-            </a>
+        <div className="about__both">
+          <div className="about__details">
+            <div className="about__first">
+              <p className="about__desc">
+                First Name:<span className="about__desc-info">Nipuna</span>
+              </p>
+              <p className="about__desc">
+                Last Name: <span className="about__desc-info">Gamage</span>
+              </p>
+              <p className="about__desc">
+                DOB: <span className="about__desc-info">1998/10/24</span>
+              </p>
+              <p className="about__desc">
+                Address:
+                <span className="about__desc-info">Oshawa, Ontario</span>
+              </p>
+              <p className="about__desc">
+                Freelance: <span className="about__desc-info">Available</span>
+              </p>
             </div>
+            <div className="about_second">
+              <p className="about__desc">
+                Phone: <span className="about__desc-info">+16478945532</span>
+              </p>
+              <p className="about__desc">
+                Email:
+                <span className="about__desc-info">
+                  nipunagamage888@gmail.com
+                </span>
+              </p>
+              <p className="about__desc">
+                Languages:
+                <span className="about__desc-info">English and Sinhala</span>
+              </p>
+              <p className="about__desc">
+                Linkedin:
+                <span
+                  className="about__desc-info about__desc-info-link"
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/nipunamadhuwantha/",
+                      "_blank"
+                    )
+                  }
+                >
+                  nipunamadhuwantha
+                </span>
+              </p>
+              <p className="about__desc">
+                Github:
+                <span
+                  className="about__desc-info about__desc-info-link"
+                  onClick={() =>
+                    window.open("https://github.com/NipunaGamage888", "_blank")
+                  }
+                >
+                  NipunaGamage888
+                </span>
+              </p>
+            </div>
+          </div>
+          <a
+            href={CV}
+            download="Nipuna_Gamage_CV.pdf"
+            class="about__download-btn"
+          >
+            <p className="about__download-name">Download CV</p>
+
+            <span class="about__download-icon">
+              <FontAwesomeIcon icon={faCloudArrowDown} />
+            </span>
+          </a>
+        </div>
         <div className="about__years">
           <div className="about__exp">
             <h1 className="about__exp-heading">2+</h1>
@@ -216,7 +214,6 @@ function About() {
           </div>
           <p className="about__language">Web Apis</p>
         </div>
-        
       </div>
       <div className="about__final">
         <div className="about__edu-sec">
@@ -233,35 +230,43 @@ function About() {
           </div>
           <div className="about__first-ed">
             <h2 className="about__institution">
-              Software Engineer Diploma - Branstation
+              Computer Science Diploma - Edith Cowan University
             </h2>
             <p className="about__info-institute">
-              Completed my brainstation Bootcamp and obtained a Software
-              Engineer diploma. I was able to learn and developer skills such as
-              React, Scss, Node, express and lot more.
+              Started my computer science diploma by enrolling to ACBT which was
+              affiliated with Edith Cowan University Australlia. I was able to
+              learn and develope skills such as Python, Web Development,
+              Computer Security, database and more.
             </p>
           </div>
         </div>
         <div className="about__edu-sec">
-          <h2 className="about__education">Education</h2>
+          <h2 className="about__education">Experience</h2>
           <div className="about__first-ed">
             <h2 className="about__institution">
-              Software Engineer Diploma - Branstation
+              Private Eye Security - Internship
             </h2>
             <p className="about__info-institute">
-              Completed my brainstation Bootcamp and obtained a Software
-              Engineer diploma. I was able to learn and developer skills such as
-              React, Scss, Node, express and lot more.
+              Assisted in developing project Eagle viewer a React CCTV camera
+              viewer app. An application that provide live access feed of CCTV
+              cameras from multiple devices. Assisted in developing user
+              interfaces, enabling the camera view access from any device,
+              including mobile, tablets and laptops.
             </p>
           </div>
           <div className="about__first-ed">
             <h2 className="about__institution">
-              Software Engineer Diploma - Branstation
+              Virtusa Sri Lanka - Internship
             </h2>
             <p className="about__info-institute">
-              Completed my brainstation Bootcamp and obtained a Software
-              Engineer diploma. I was able to learn and developer skills such as
-              React, Scss, Node, express and lot more.
+              Contributed to 3 react applications that were developed as part of
+              the project Reppido. System that provides an overview of all
+              incident reports within the municipality. The application consist
+              of Incident. Responsible for creating and designing 20% user
+              interfaces.
+              Implemented secure payment gateways, fostering customer trust and boosting sales by 15% during
+incident report downloads. Designed and developed the application using Agile Scrum methodology by
+breaking down the project to several points.
             </p>
           </div>
         </div>
