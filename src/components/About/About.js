@@ -59,7 +59,7 @@ function About() {
               </p>
               <p className="about__desc">
                 Address:
-                <span className="about__desc-info">Oshawa, Ontario</span>
+                <span className="about__desc-info">Ontario</span>
               </p>
               <p className="about__desc">
                 Freelance: <span className="about__desc-info">Available</span>
