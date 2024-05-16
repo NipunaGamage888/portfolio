@@ -32,8 +32,12 @@
     @include tablet {
       display: flex;
       flex-direction: row;
+      justify-content: center;
+      margin-top: 5rem;
       width: 87%;
       border-bottom: 1px solid rgb(109, 106, 106);
+    }@include exLarge{
+      width:90%
     }
   }
   &__me {
@@ -48,12 +52,14 @@
     }
   }
   &__desc {
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     color: rgb(183, 181, 181);
     @include desktop {
       flex-direction: row;
+      font-size: 1.7rem;
+    }@include exLarge{
       font-size: 2rem;
     }
   }
@@ -77,6 +83,8 @@
     font-size: 1rem;
     color: white;
     @include desktop {
+      font-size: 1.7rem;
+    }@include exLarge{
       font-size: 2rem;
     }
   }
@@ -96,7 +104,14 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
-    padding-bottom: 15rem;
+    padding-bottom: 3rem;
+    @include tablet{
+      padding-bottom: 8rem;
+    }
+    @include desktop{
+      padding-bottom: 10rem;
+    }
+    
   }
   &__exp {
     border: 1px solid rgb(109, 106, 106);
@@ -115,6 +130,8 @@
     margin: 0;
     padding: 0;
     @include desktop {
+      font-size: 4rem;
+    }@include exLarge{
       font-size: 5rem;
     }
   }

@@ -18,3 +18,9 @@
         
     }
 }
+
+@mixin exLarge{
+    @media screen and (min-width: $ex-large){
+        @content
+    }
+}

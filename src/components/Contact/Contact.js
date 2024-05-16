@@ -13,6 +13,7 @@ function Contact() {
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const PORT = process.env.REACT_APP_API_URL;
   const pageVariants = {
     initial: {
       opacity: 0,
@@ -45,7 +46,7 @@ function Contact() {
       message: message,
     };
     try {
-      await axios.post("http://localhost:8081/api/sendemail", formData);
+      await axios.post(`${PORT}`, formData);
       alert("Email Sent Successfully");
     } catch (error) {
       console.error(error);

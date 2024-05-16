@@ -78,8 +78,8 @@ function Home() {
           <div className="home__title"> </div>
 
           <p className="home__info">
-            I'm a Tunisian based web designer & front‑end developer focused on
-            crafting clean & user‑friendly experiences, I am passionate about
+            I'm a Canadian based full stack developer focused on
+            creating clean & user‑friendly experiences, I am passionate about
             building excellent software that improves the lives of those around
             me.
           </p>
