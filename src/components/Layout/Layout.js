@@ -6,6 +6,7 @@ import About from "../About/About";
 
 import { useLocation } from "react-router-dom/dist";
 import Contact from "../Contact/Contact";
+import Projects from "../Projects/Projects";
 
 function Layout() {
   const location = useLocation();
@@ -16,6 +17,7 @@ function Layout() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Project" element={<Projects/>}/>
         </Routes>
       </AnimatePresence>
     </div>

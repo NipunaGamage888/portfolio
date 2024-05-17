@@ -52,6 +52,7 @@ function Contact() {
       console.error(error);
     }
   };
+  console.log(process.env)
 
   return (
     <motion.div
@@ -62,7 +63,7 @@ function Contact() {
       className="contact"
     >
       <h1 className="contact__heading">
-        Get <span1 className="contact__me">In Touch</span1>
+        Get <span className="contact__me">In Touch</span>
       </h1>
       <div className="contact__methods">
         <div className="contact__info">

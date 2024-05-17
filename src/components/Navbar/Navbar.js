@@ -28,7 +28,7 @@ const Navbar = () => {
     setOpen(false)
   }
   const project =()=>{
-    navigate('/projects')
+    navigate('/Project')
     setOpen(false)
   }
   return (

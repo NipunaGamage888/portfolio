@@ -1,0 +1,15 @@
+.project{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__melwa{
+        background-color: white;
+        color:rgb(7, 7, 46) ;
+        font-size: 4rem;
+        font-weight: 700;
+
+    }
+}
