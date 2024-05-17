@@ -4,6 +4,7 @@ import mainImage from "../../assets/Face.jpg";
 import { motion } from "framer-motion";
 import { Typed } from "react-typed";
 import Main from "../Main/Main";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const pageVariants = {
@@ -30,6 +31,11 @@ function Home() {
       },
     },
   };
+  const navigate= useNavigate()
+  const aboutNav =()=>{
+    navigate('/about')
+  }
+
 
   useEffect(() => {
     const typedName = document.querySelector(".home__name");
@@ -84,7 +90,7 @@ function Home() {
             me.
           </p>
         </div>
-        <button className="home__button">About Me</button>
+        <button onClick={aboutNav} className="home__button">About Me</button>
       </div>
     </motion.div>
   );
