@@ -22,7 +22,7 @@ export default function Projects() {
             <a
               className="project__link"
               target="_blank"
-              href="NipunaGamage888/nipuna-gamage-capstone-attendee"
+              href="https://github.com/NipunaGamage888/nipuna-gamage-capstone-attendee"
             >
               View in GitHub
             </a>
